@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:auto_route/auto_route.dart';
+import 'package:dice_roll/Components/rollingDice.dart';
 import 'package:dice_roll/main.dart';
 import 'package:dice_roll/router.gr.dart';
 import 'package:flutter/material.dart';
@@ -58,14 +59,13 @@ class HomePage extends HookConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               // backgroundColor: Colors.blue,
               children: [
-                Text('$diceOne'),
-                SizedBox(
-                  width: 120,
+                RollingDice(
+                  color: Colors.black,
+                    image: 'images/dice$diceOne.png', valueKey: diceOne),
+                const SizedBox(
+                  width: 20,
                 ),
-                Text('$diceTwo')
-                
-
-
+                RollingDice( color: Colors.red, image: 'images/dice$diceTwo.png', valueKey: diceTwo)
               ],
             ),
             const SizedBox(
@@ -92,7 +92,6 @@ class HomePage extends HookConsumerWidget {
                 ),
               ],
             )
-            // Text(value)
           ],
         ));
   }
