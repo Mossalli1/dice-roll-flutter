@@ -1,16 +1,18 @@
 # dicerollapp
 
 A new Flutter project.
-<img src="https://github.com/favicon.ico" width="48">
-Home Screen
-![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.17.png)
 
-![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.36.png)
+##Home Screen
 
-History Screen
-![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.49.png)
+<img src="https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.17.png" alt="1" width="250" />
 
-![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.13.24.png)
+<img src="https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.36.png" alt="1" width="250" />
+
+##History Screen
+
+<img src="https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.49.png" alt="1" width="250" />
+
+<img src="https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.13.24.png" alt="1" width="250" />
 
 ## Getting Started
 
