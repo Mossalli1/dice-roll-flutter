@@ -1,10 +1,9 @@
 # dicerollapp
 
 A new Flutter project.
-
+<img src="https://github.com/favicon.ico" width="48">
 Home Screen
-<img src="[https://github.com/favicon.ico](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.17.png)" width="200">
-
+![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.17.png)
 
 ![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.36.png)
 
