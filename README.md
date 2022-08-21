@@ -2,6 +2,16 @@
 
 A new Flutter project.
 
+Home Screen
+![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.17.png)
+
+![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.36.png)
+
+History Screen
+![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.10.49.png)
+
+![alt text](https://github.com/Mossalli1/dice-roll-flutter/blob/main/screenShots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-08-21%20at%2021.13.24.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
