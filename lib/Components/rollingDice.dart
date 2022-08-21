@@ -12,7 +12,6 @@ class RollingDice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Text(image!);
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 400),
       transitionBuilder: (Widget child, Animation<double> animation) {

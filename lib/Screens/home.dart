@@ -1,25 +1,11 @@
 import 'dart:math';
-
 import 'package:auto_route/auto_route.dart';
+import 'package:dice_roll/Components/button.dart';
 import 'package:dice_roll/Components/rollingDice.dart';
 import 'package:dice_roll/main.dart';
 import 'package:dice_roll/router.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:jiffy/jiffy.dart';
-
-// class HomePage extends StatefulWidget {
-//   const HomePage({super.key});
-//
-//   @override
-//   State<HomePage> createState() => _HomePageState();
-// }
-// class HomePage extends StatelessWidget {
-//   const HomePage({super.key});
-//
-//   // @override
-//   // State<HomePage> createState() => _HomePageState();
-// }
 
 class HomePage extends HookConsumerWidget {
   const HomePage({super.key});
@@ -34,18 +20,17 @@ class HomePage extends HookConsumerWidget {
       final timeStamp = date.millisecondsSinceEpoch;
       ref.read(firstDiceProvider.state).state = Random().nextInt(6) + 1;
       ref.read(secondDiceOProvider.state).state = Random().nextInt(6) + 1;
-      final diceOneUpdatedvalue = ref.watch(firstDiceProvider);
-      final diceTwoUpdatedvalue = ref.watch(secondDiceOProvider);
+      final diceOneUpdatedValue = ref.watch(firstDiceProvider);
+      final diceTwoUpdatedValue = ref.watch(secondDiceOProvider);
       ref
           .read(historyItemsProvider.notifier)
-          .add(diceOneUpdatedvalue, diceTwoUpdatedvalue, timeStamp);
+          .add(diceOneUpdatedValue, diceTwoUpdatedValue, timeStamp);
     }
 
     void onGoHistory() async {
       context.router.push(History(title: 'History'));
     }
 
-    // final String value = ref.watch(helloWorldProvider);
     return Scaffold(
         appBar: AppBar(
           title: const Text('Home'),
@@ -57,15 +42,18 @@ class HomePage extends HookConsumerWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              // backgroundColor: Colors.blue,
               children: [
                 RollingDice(
-                  color: Colors.black,
-                    image: 'images/dice$diceOne.png', valueKey: diceOne),
+                    color: Colors.black,
+                    image: 'images/dice$diceOne.png',
+                    valueKey: diceOne),
                 const SizedBox(
                   width: 20,
                 ),
-                RollingDice( color: Colors.red, image: 'images/dice$diceTwo.png', valueKey: diceTwo)
+                RollingDice(
+                    color: Colors.red,
+                    image: 'images/dice$diceTwo.png',
+                    valueKey: diceTwo)
               ],
             ),
             const SizedBox(
@@ -75,19 +63,15 @@ class HomePage extends HookConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Center(
-                  child: ElevatedButton(
-                    child: const Text('Roll the dice'),
-                    onPressed: () {
-                      onRollDice();
-                    },
+                  child: CustomButton(
+                    buttonText: 'Roll Dice',
+                    onPressed: () => onRollDice(),
                   ),
                 ),
                 Center(
-                  child: ElevatedButton(
-                    child: const Text('Go to history'),
-                    onPressed: () {
-                      onGoHistory();
-                    },
+                  child: CustomButton(
+                    buttonText: 'Go to History',
+                    onPressed: () => onGoHistory(),
                   ),
                 ),
               ],
